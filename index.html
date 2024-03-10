@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Shravni</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fce4ec;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: #ff80ab;
+            padding: 20px;
+        }
+
+        .profile-picture img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+
+        h1 {
+            color: #e91e63;
+            margin: 0;
+        }
+
+        .header-text p {
+            color: #888;
+            margin: 5px 0;
+        }
+
+        section {
+            background-color: #fff;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .skill-tags span {
+            background-color: #e91e63;
+            color: #fff;
+            padding: 8px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .skill-tags span:hover {
+            background-color: #ff4081;
+        }
+
+        button {
+            background-color: #e91e63;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ff4081;
+        }
+
+        .additional-details {
+            display: none;
+        }
+    </style>
+    <script>
+        function details() {
+            var additionalDetails = document.querySelector('.additional-details');
+            if (additionalDetails.style.display == 'none') {
+                additionalDetails.style.display = 'block';
+                toggleButton.innerText = 'Hide Details';
+            } else {
+                additionalDetails.style.display = 'none';
+                toggleButton.innerText = 'Show Details';
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <div class="profile-picture">
+            
+                alt="Shravani's Profile Picture">
+        </div>
+        <div class="header-text">
+            <h1>Shravani Somnath Wange</h1>
+            <p>Web Developer</p>
+        </div>
+    </header>
+
+    <section class="personal-info">
+        <h2>Personal Information</h2>
+        <ul>
+            <li>Email: <a href="mailto:iit2023222@iiita.ac.in">iit2023222@iiita.ac.in</a></li>
+            <li>Location: Mumbai, Maharastra, India</li>
+        </ul>
+    </section>
+
+    <section class="education">
+        <h2>Education</h2>
+        <p>JEE Rank -5148 </p>
+        <p>Bachelors - Indian Institute of Information Technology.</p>
+    </section>
+
+    <section class="skills">
+        <h2>Skills</h2>
+        <div class="skill-tags">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>Responsive Design</span>
+        </div>
+    </section>
+
+    <section class="hobbies">
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Designing Websites</li>
+            <li>Reading Novels</li>
+            <li>DIY Crafts</li>
+        </ul>
+        <button id="toggleButton" onclick="details()">Show Details</button>
+    </section>
+
+    <section class="additional-details">
+        <h2>More</h2>
+        <p>I belong from jalna maharashtra. <br>
+            i studied in rishi vidyalaya school where i was the head captain of the school.<br>
+            i like playing badminton and my favourite sport is swimming.<br>
+            my hobbies are singing and playing drums.<br>
+
+
+            
+        </p>
+    </section>
+    <section class="projects">
+        <h2>Projects</h2>
+        <ul>
+            <div class="container">
+                <div><a href="./projects/1.html" target="_self">1) Responsive sliding login and registration forms using HTML CSS and JavaScript.
+                </a></div>
+                <div><a href="./projects/2.html" target="_self">2) Design a Student Grade Calculator using JavaScript</a></div>
+                <div><a href="./projects/3.html" target="_self">3) Slide Down a Navigation Bar on Scroll using HTML, CSS, and JavaScript
+                </a></div>
+                <div><a href="./projects/4.html" target="_self">4) Design a BMI Calculator using JavaScript
+                </a></div>
+                <div><a href="./projects/5.html" target="_self">5) Task Tracker Project</a></div>
+                <div><a href="./projects/6.html" target="_self">6) Detect network speed using JavaScript</a></div>
+                <div><a href="./projects/7.html" target="_self">7)Design a Tip Calculator using HTML, CSS, and JavaScript
+                </a></div>
+                <div><a href="./projects/8.html" target="_self">
+                    8) Create an Analog Clock using HTML, CSS, and JavaScript
+                </a></div>
+                <div><a href="./projects/9.html" target="_self">9) Pay Role Management Webpage using HTML CSS JavaScript</a></div>
+                <div><a href="./projects/10.html" target="_self">
+                    10) Mousemove parallax effects using HTML CSS & JavaScript
+                </a></div>
+                <div><a href="./projects/11.html" target="_self">11) Build a Text to Speech Converter using HTML, CSS & JavaScript</a></div>
+                <div><a href="./projects/12.html" target="_self">12) Build An AI Image Generator Website in HTML CSS and JavaScript</a></div>
+            </div>
+        </ul>
+        
+    </section>
+</body>
+
+</html>
